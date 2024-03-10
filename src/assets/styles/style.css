@@ -1,0 +1,63 @@
+.CardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .FilterSection {
+    display: flex;
+    padding-inline: 10px;
+    gap: 0;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .CardContainer {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin-inline: auto;
+      padding-block: 20px;
+    }
+  
+    .FilterSection {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-inline: 20px;
+    }
+  }
+  
+  .SearchBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .InputField {
+    border: 1px solid black !important;
+  }
+  
+  .AddEventButton {
+    margin-left: 10px;
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  .SearchBar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .SearchIcon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
